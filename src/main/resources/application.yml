@@ -1,0 +1,16 @@
+server:
+  port: 9022
+  servlet:
+    context-path: /student/v1
+
+
+spring:
+  mvc:
+    path match:
+      matching-strategy: ant-path-matcher
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/StudentDB
+
+
